@@ -34,6 +34,7 @@ header::after{
 .logo{
 	float:left;
 	margin-left:2em;
+	color:white;
 }
 nav {
   font-weight: 600;
@@ -97,6 +98,7 @@ nav a:hover::before{
 
 h1 {
   text-align: center;
+  color:#2a2a40;
 }
 th{
 	text-align: center;
