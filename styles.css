@@ -377,7 +377,9 @@ footer {
     font-size: 2vh;
     padding-top: 2.5vh;
   }
-
+  .logo{
+    margin-top:0.6em;
+  }
 	.parallelogram-container {
     width: 60%;
 		margin:auto;
