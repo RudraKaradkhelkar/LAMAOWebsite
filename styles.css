@@ -83,7 +83,7 @@ nav a:hover::before {
   height: 100%;
   width: 50%;
   margin: auto;
-  margin-bottom: 20vh;
+  margin-bottom: 30vh;
   margin-top: 2em;
 }
 
@@ -472,10 +472,10 @@ footer {
   #about-container, .aboutParagraph {
     width: 70%;
 		font-size:1.1em;
-		margin-bottom:-10em;
+		margin-bottom:-7em;
   }
 	.aboutParagraph{
-		margin-bottom:1.5em;
+		margin-bottom:2em;
 	}
 
   img {
@@ -561,7 +561,7 @@ footer {
 		transform: translate(-3em,0) skew(20deg);
 	}
   to {
-    transform: translate(10em, 3em) skew(20deg);
+    transform: translate(8.5em, 3em) skew(20deg);
   }
 }
 
@@ -596,7 +596,12 @@ footer {
 
   #about-container, .aboutParagraph {
     width: 70%;
+		font-size:1.1em;
+		margin-bottom:-7em;
   }
+	.aboutParagraph{
+		margin-bottom:2em;
+	}
 
   img {
     width: 60%;
