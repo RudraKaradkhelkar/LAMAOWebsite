@@ -1,0 +1,167 @@
+/* Base styles for dark mode */
+@charset "UTF-8";
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+body {
+  background-color: #242424;
+  color: white;
+  font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  height:100%;
+	width: 100%;
+	
+	overflow-x:hidden;
+  scrollbar-width: thin;
+	top:0;
+	left:0;
+	padding-top:70px;
+}
+.navigation {
+  position: fixed;
+  top: 0;
+	left:0;
+  width:100%;
+	height:70px;
+	background-color: #2a2a40;
+  z-index:1000;
+}
+header::after{
+	content:'';
+	display:table;
+	clear:both;
+}
+.logo{
+	float:left;
+	margin-left:2em;
+  color:white;
+  margin-top:0.6em;
+}
+nav {
+  font-weight: 600;
+}
+
+nav ul {
+	margin:0;
+	padding:0;
+	float:right;
+	list-style:none;
+}
+
+nav li{
+	display:inline-block;
+	margin-left:0.2em;
+	margin-right:1.2em;
+	padding-top:1.4em;
+	font-size:1em;
+	position:relative;
+}
+
+nav a{
+	color:white;
+	text-decoration:none;
+	text-transform:uppercase;
+  cursor:pointer;
+}
+
+nav a:hover{
+	color:rgb(189, 187, 187);
+}
+
+nav a::before{
+	content: '';
+	display:block;
+	height:5px;
+	width:0%;
+	background-color:white;
+	position:absolute;
+	top:0;
+	transition:all ease-in-out 250ms;
+}
+nav a:hover::before{
+	width:100%;
+}
+
+h1, h2, h3 {
+  color: #bb86fc;
+}
+
+h1{
+  text-align:center;
+}
+
+@media (max-width: 900px) {
+  article {
+    max-width: 95%;
+    padding: 10px;
+  }
+  .navigation {
+    height: 60px;
+  }
+
+  nav li {
+    font-size: 1.5vh;
+    padding-top: 2.8vh;
+  }
+  .logo{
+    margin-top:0.4em;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 600px) {
+  article {
+    max-width: 100%;
+    padding: 5px;
+  }
+
+  .navigation {
+    height: 50px;
+  }
+	.logo{
+		margin-top:0em;
+	}
+  nav li {
+    font-size: 1.8vh;
+    padding-top: 2vh;
+  }
+
+  h1 {
+    font-size: 1.25em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  h3 {
+    font-size: 0.9em;
+  }
+}
+footer{
+	width: 100%;
+  background-color: #2a2a40;
+	text-align:center;
+  display: flex;
+  justify-content: center;
+	padding: 1em;
+	position:absolute;
+	left:0;
+}
+h3{
+  color:white;
+}
