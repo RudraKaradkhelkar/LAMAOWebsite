@@ -81,11 +81,10 @@ nav a:hover::before {
 
 .parallelogram-container {
   height: 100%;
-  width: 70%;
+  width: 50%;
   margin: auto;
   margin-bottom: 20vh;
   margin-top: 2em;
-
 }
 
 .parallelogram {
@@ -333,8 +332,17 @@ footer {
     height: 28em;
   }
 
-  .mao1, .mao2, .mao3 {
+  .mao1{
     font-size: 2.5em;
+    padding-top:7em;
+  }
+  .mao2{
+    font-size: 2.5em;
+    padding-top:9em;
+  }
+  .mao3 {
+    font-size: 2.5em;
+    padding-top:9.5em;
   }
 
   #about-container, .aboutParagraph {
