@@ -4,15 +4,35 @@
 		<meta charset="utf-8">
 		<title>LAMAO Home Page</title>
 		<link rel="stylesheet" href="styles.css">
+		<script>
+			function navigateToStateboardPage(){
+				window.location.href = 'StateBoard.html';
+			}	
+			function navigateToConstitutionPage(){
+				window.location.href = 'Constitution.html';
+			}
+			function navigateToConventionPage(){
+				window.location.href = 'Convention.html';
+			}
+			function navigateToContestPage(){
+				window.location.href = 'Contest.html';
+			}
+			function navigateToTestsPage(){
+				window.location.href = 'Tests.html';
+			}
+			function navigateToResultsPage(){
+				window.location.href = 'Results.html';
+			}
+		</script>
 	</head>
 	<header>
 		<nav class="navigation">
-				<h1 class="logo">LAMAΘ</h1>
-				<ul>
+			<h1 class="logo">LAMAΘ</h1>
+			<ul>
 				<li><a href="#about-container"><span>About</span></a></li>
 				<li><a href="#tournament-date-header"><span>Tournament Dates</span></a></li>
 				<li><a href="#information-container"><span>Information</span></a></li>
-				</ul>
+			</ul>
 		</nav>
 	</header>
 	<body>
@@ -87,12 +107,12 @@
 			</table>
 	
 			<div id="information-container" class="info-cards">
-				<button class="info-card hidden">State Board</button>
-				<button class="info-card hidden">Constitution</button>
-				<button class="info-card hidden">Convention Info</button>
-				<button class="info-card hidden">Contest Rules</button>
-				<button class="info-card hidden">Past Tests</button>
-				<button class="info-card hidden">Past Results</button>
+				<button class="info-card hidden" onclick="navigateToStateboardPage()">State Board</button>
+				<button class="info-card hidden" onclick="navigateToConstitutionPage()">Constitution</button>
+				<button class="info-card hidden" onclick="navigateToConventionPage()">Convention Info</button>
+				<button class="info-card hidden" onclick="navigateToContestPage()">Contest Rules</button>
+				<button class="info-card hidden" onclick="navigateToTestsPage()">Past Tests</button>
+				<button class="info-card hidden" onclick="navigateToResultsPage()">Past Results</button>
 			</div>
 		
 		<footer>
