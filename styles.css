@@ -1,19 +1,90 @@
 @charset "utf-8";
 /* CSS Document */
-
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
 body{
 	background-color: #242424;
 	color: white;
 	height:100%;
 	width: 100%;
 	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-	}
+	overflow-x:hidden;
+  scrollbar-width: thin;
+	top:0;
+	left:0;
+	padding-top:70px;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+	left:0;
+  width:100%;
+	height:70px;
+	background-color: #2a2a40;
+  z-index:1000;
+}
+header::after{
+	content:'';
+	display:table;
+	clear:both;
+}
+.logo{
+	float:left;
+	margin-left:2em;
+}
+nav {
+  font-weight: 600;
+}
+
+nav ul {
+	margin:0;
+	padding:0;
+	float:right;
+	list-style:none;
+}
+
+nav li{
+	display:inline-block;
+	margin-left:1em;
+	margin-right:4em;
+	padding-top:1.3em;
+	font-size:1.2em;
+	position:relative;
+}
+
+nav a{
+	color:white;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+nav a:hover{
+	color:rgb(189, 187, 187);
+}
+
+nav a::before{
+	content: '';
+	display:block;
+	height:5px;
+	width:0%;
+	background-color:white;
+	position:absolute;
+	top:0;
+	transition:all ease-in-out 250ms;
+}
+nav a:hover::before{
+	width:100%;
+}
 
 .parallelogram-container {
-    height: 90vh;
+    height: 85vh;
 		width:100vh;
 		margin:auto;
-		margin-bottom:2em;
+		margin-bottom:1em;
+		margin-top:2em;
 }
  
 .parallelogram { 
@@ -21,6 +92,7 @@ body{
 		position:relative;
     height: 33em;
     transform: skew(20deg);
+		margin-left:2em;
 		text-align:center;
 }
 .mao1{
@@ -105,17 +177,18 @@ body{
     animation: slide4 1.5s ease-out forwards;
 }
 
-
-
-
 #about-container{
-	width:60%;
+	width:80vh;
 	height: 90vh;
 	margin: auto;
 	margin-bottom: 1em;
 	position: relative;	
 	text-align: center;
 	font-size:1.5em;
+}
+.aboutParagraph{
+	width:80vh;
+	margin:auto;
 }
 img{
 	width: 70%;
@@ -137,7 +210,7 @@ article > img{
 }
 
 #tournament-date-container{
-	width:90%;
+	width:100vh;
 	height:120vh;
 	border:medium solid white;
 	margin:auto; 
@@ -155,11 +228,9 @@ th, td{
 }
 
 #information-container{
-	width:100%;
+	width:90%;
 	height: 120vh;
-/*	border:thick solid white; */
 	margin:auto;
-	margin-left:2em;
 	margin-bottom: 2em;
 	position: relative;
 }
@@ -171,11 +242,11 @@ th, td{
 .info-card,button{
 	box-sizing: border-box;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-	font-size: 2.5em;
+	font-size: 2rem;
 	text-align: center;
 	color:black;
-    margin: 0rem;
-    padding-top:auto;
+  margin: 0rem;
+  padding:auto;
 	background: linear-gradient(to bottom, white 0%, black 100%); 
 	border-radius: 1em; 
 	box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
@@ -237,6 +308,8 @@ footer{
   display: flex;
   justify-content: center;
 	padding: 1em;
+	position:absolute;
+	left:0;
 }
 
 .hidden{
