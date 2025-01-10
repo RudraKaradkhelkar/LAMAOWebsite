@@ -107,10 +107,14 @@ article {
 
 h1, h2, h3 {
   color: #2d6dad;
+/* 
+2d6dad
+*/
 }
 
 p {
   margin: 10px 0;
+color: #d7f2fb;
 }
 
 ol {
